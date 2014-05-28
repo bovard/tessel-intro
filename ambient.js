@@ -41,7 +41,7 @@ ambient.on('ready', function () {
 
   // Set a sound level trigger
   // The trigger is a float between 0 and 1
-  var soundTrigger = .01;
+  var soundTrigger = .1;
   ambient.setSoundTrigger(soundTrigger);
 
   ambient.on('sound-trigger', function(data) {
@@ -57,7 +57,7 @@ ambient.on('ready', function () {
       
         ambient.setSoundTrigger(soundTrigger);
 
-    },1500);
+    },150);
 
   });
 });
