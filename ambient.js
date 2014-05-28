@@ -14,17 +14,17 @@ var ambient = require('ambient-attx4').use(tessel.port('A'));
 ambient.on('ready', function () {
  // Get a stream of light data
   ambient.on('light', function(data) {
-    console.log("Got some  light: ", data);
+    //console.log("Got some  light: ", data);
   });
 
   // Get a stream of sound level data
   ambient.on('sound', function(data) {
-    console.log("Got some  sound: ", data);
+    //console.log("Got some  sound: ", data);
   });
 
   // Set trigger levels
   // The trigger value is a float between zero to 1
-  ambient.setLightTrigger(0.15);
+  ambient.setLightTrigger(1.0);
 
   ambient.on('light-trigger', function(data) {
     console.log("Our light trigger was hit:", data);
@@ -41,19 +41,21 @@ ambient.on('ready', function () {
 
   // Set a sound level trigger
   // The trigger is a float between 0 and 1
-  ambient.setSoundTrigger(0.43);
+  var soundTrigger = .01;
+  ambient.setSoundTrigger(soundTrigger);
 
   ambient.on('sound-trigger', function(data) {
 
     console.log("Something happened with sound: ", data);
 
     // Clear it
+    console.log("clearing trigger");
     ambient.clearSoundTrigger();
 
     //After 1.5 seconds reset sound trigger
     setTimeout(function () { 
       
-        ambient.setSoundTrigger(0.43);
+        ambient.setSoundTrigger(soundTrigger);
 
     },1500);
 

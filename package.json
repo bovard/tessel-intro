@@ -11,7 +11,6 @@
     "url": "git@github.com:bovard/tessel-intro.git"
   },
   "author": "Bovard Tiberi <bovard.tiberi@gmail.com> (http://github.com/bovard)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bovard/tessel-intro/issues"
   },
