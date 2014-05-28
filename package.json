@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bovard/tessel-intro/issues"
   },
-  "homepage": "https://github.com/bovard/tessel-intro"
+  "homepage": "https://github.com/bovard/tessel-intro",
+  "dependencies": {
+    "ambient-attx4": "~0.1.3"
+  }
 }
