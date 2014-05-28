@@ -1,0 +1,19 @@
+{
+  "name": "tessel-intro",
+  "version": "0.0.0",
+  "description": "Messing around with tessel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bovard/tessel-intro.git"
+  },
+  "author": "Bovard Tiberi <bovard.tiberi@gmail.com> (http://github.com/bovard)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bovard/tessel-intro/issues"
+  },
+  "homepage": "https://github.com/bovard/tessel-intro"
+}
